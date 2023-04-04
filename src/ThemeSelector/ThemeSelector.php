@@ -4,12 +4,15 @@ declare(strict_types=1);
 
 namespace PerfectApp\ThemeSelector;
 
-use PerfectApp\Cookie\CookieHandler;
+use PerfectApp\Http\Cookie;
 
 class ThemeSelector
 {
-    use CookieHandler;
+    private Cookie $cookie;
 
+    /**
+     * @var array<string, string>
+     */
     private array $themes = [
         'default' => 'Default',
         'cerulean' => 'Cerulean',
@@ -39,17 +42,18 @@ class ThemeSelector
         'zephyr' => 'Zephyr',
     ];
 
-    public function __construct()
+    public function __construct(Cookie $cookie)
     {
+        $this->cookie = $cookie;
         $this->setTheme();
     }
 
-    public function getTheme()
+    public function getTheme(): ?string
     {
-        return $this->get('theme') ?? 'default';
+        return $this->cookie->get('theme') ?? 'default';
     }
 
-    public function setTheme($themeName = null): void
+    public function setTheme(string $themeName = null): void
     {
         if ($themeName === null) {
             $themeName = $this->getTheme();
@@ -60,7 +64,7 @@ class ThemeSelector
         }
 
         $expiry = time() + (60 * 60 * 24 * 30); // 30 days from now
-        $this->set('theme', $themeName, $expiry, '/');
+        $this->cookie->set('theme', $themeName, $expiry, '/');
     }
 
     public function renderSelector(): string
@@ -72,7 +76,7 @@ class ThemeSelector
 
         foreach ($this->themes as $themeKey => $themeName) {
             $selected = ($themeKey === $currentTheme) ? 'selected' : '';
-            $output .= '<option value="'.$themeKey.'" '.$selected.'>'.$themeName.'</option>';
+            $output .= '<option value="' . $themeKey . '" ' . $selected . '>' . $themeName . '</option>';
         }
 
         $output .= '</select>';
