@@ -10,7 +10,7 @@ class ThemeSelector
 {
     use CookieHandler;
 
-    private array $themes = array(
+    private array $themes = [
         'default' => 'Default',
         'cerulean' => 'Cerulean',
         'cosmo' => 'Cosmo',
@@ -37,7 +37,7 @@ class ThemeSelector
         'vapor' => 'Vapor',
         'yeti' => 'Yeti',
         'zephyr' => 'Zephyr',
-    );
+    ];
 
     public function __construct()
     {
