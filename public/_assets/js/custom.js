@@ -6,10 +6,10 @@
   //  Helper functions
   function escapeHtml(html) {
     return html.replace(/×/g, '&times;')
-               .replace(/«/g, '&laquo;')
-               .replace(/»/g, '&raquo;')
-               .replace(/←/g, '&larr;')
-               .replace(/→/g, '&rarr;');
+        .replace(/«/g, '&laquo;')
+        .replace(/»/g, '&raquo;')
+        .replace(/←/g, '&larr;')
+        .replace(/→/g, '&rarr;');
   }
 
   function cleanSource(html) {
@@ -83,13 +83,13 @@
   addSourceModals();
 
   // Prevent empty `a` elements or `submit` buttons from navigating away
-/*  const targets = document.querySelectorAll('[href="#"], [type="submit"]');
+  const targets = document.querySelectorAll('[href="#"], [type="submit"]');
 
   for (const element of targets) {
     element.addEventListener('click', event => {
       event.preventDefault();
     });
-  }*/
+  }
 
   // Add the "View Source" buttons in each component
   const bsComponents = document.querySelectorAll('.bs-component');
