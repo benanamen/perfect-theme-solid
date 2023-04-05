@@ -50,7 +50,13 @@ class ThemeSelector
 
     public function getTheme(): ?string
     {
-        return $this->cookie->get('theme') ?? 'default';
+        $themeName = $this->cookie->get('theme') ?? 'default';
+
+        if (!isset($this->themes[$themeName])) {
+            $themeName = 'default';
+        }
+
+        return $themeName;
     }
 
     public function setTheme(string $themeName = null): void
