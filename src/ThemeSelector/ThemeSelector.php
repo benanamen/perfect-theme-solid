@@ -77,7 +77,7 @@ class ThemeSelector
 
         foreach ($this->themes as $themeKey => $themeName) {
             $selected = ($themeKey === $currentTheme) ? 'selected' : '';
-            $output .= '<option value="' . $themeKey . '" ' . $selected . '>' . $themeName . '</option>';
+            $output .= "<option value='$themeKey' $selected>$themeName</option>";
         }
 
         $output .= '</select>';

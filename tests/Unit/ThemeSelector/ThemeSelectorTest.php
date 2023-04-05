@@ -109,7 +109,7 @@ class ThemeSelectorTest extends TestCase
 
         // check that each theme is an option
         foreach ($themes as $themeKey => $themeName) {
-            $this->assertStringContainsString('<option value="' . $themeKey . '"', $output);
+            $this->assertStringContainsString("<option value='$themeKey'", $output);
             $this->assertStringContainsString($themeName, $output);
         }
     }
