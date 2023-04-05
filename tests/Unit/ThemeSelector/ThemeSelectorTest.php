@@ -71,7 +71,6 @@ class ThemeSelectorTest extends TestCase
         $this->assertSame('default', $themeSelector->getTheme());
     }
 
-
     /**
      * @throws Exception
      */
