@@ -45,7 +45,6 @@ class ThemeSelector
     public function __construct(Cookie $cookie)
     {
         $this->cookie = $cookie;
-        $this->setTheme();
     }
 
     public function getTheme(): ?string
@@ -59,12 +58,8 @@ class ThemeSelector
         return $themeName;
     }
 
-    public function setTheme(string $themeName = null): void
+    public function setTheme(string $themeName): void
     {
-        if ($themeName === null) {
-            $themeName = $this->getTheme();
-        }
-
         if (!isset($this->themes[$themeName])) {
             $themeName = 'default';
         }
