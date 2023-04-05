@@ -64,8 +64,8 @@ class ThemeSelector
             $themeName = 'default';
         }
 
-        $expiry = time() + (60 * 60 * 24 * 30); // 30 days from now
-        $this->cookie->set('theme', $themeName, $expiry, '/');
+        $expire = time() + (60 * 60 * 24 * 30); // 30 days from now
+        $this->cookie->set('theme', $themeName, $expire, '/');
     }
 
     public function renderSelector(): string
