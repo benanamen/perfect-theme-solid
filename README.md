@@ -1,11 +1,13 @@
 [![codecov](https://codecov.io/gh/benanamen/perfect-theme-solid/branch/master/graph/badge.svg?token=rY0IleWJNW)](https://codecov.io/gh/benanamen/perfect-theme)
 
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-theme&metric=coverage)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-theme)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-theme-solid&metric=coverage)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-theme-solid)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-theme-solid&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-theme-solid)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-theme-solid&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-theme-solid)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-theme-solid&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-theme-solid)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-theme-solid&metric=bugs)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-theme-solid)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-theme-solid&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-theme-solid)
+
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-theme-solid&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-theme-solid)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-theme-solid&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-theme-solid)
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-theme-solid&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-theme-solid)

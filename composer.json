@@ -1,16 +1,16 @@
 {
-  "name": "krubio/perfect-theme",
+  "name": "krubio/perfect-theme-solid",
   "description": "Theme Switcher",
   "keywords": [
     "Theme Switcher",
-    "Bootstrap 5 Theme Switcher"
+    "Bootstrap 5 Theme Switcher SOLID Compliant"
   ],
   "license": "MIT",
   "authors": [
     {
       "name": "Kevin Rubio",
       "email": "ducatikevin@yahoo.com",
-      "homepage": "https://github.com/benanamen/perfect-theme",
+      "homepage": "https://github.com/benanamen/perfect-theme-solid",
       "role": "Developer"
     }
   ],
