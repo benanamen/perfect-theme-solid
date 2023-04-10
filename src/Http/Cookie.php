@@ -29,8 +29,8 @@ class Cookie
         int $expire = 0,
         string $path = '',
         string $domain = '',
-        bool $secure = true,
-        bool $httponly = true
+        bool $secure = false,
+        bool $httponly = false
     ): void {
         setcookie($key, $value, $expire, $path, $domain, $secure, $httponly);
         $this->cookie[$key] = $value;
@@ -40,8 +40,8 @@ class Cookie
         string $key,
         string $path = '',
         string $domain = '',
-        bool $secure = true,
-        bool $httponly = true
+        bool $secure = false,
+        bool $httponly = false
     ): void {
         setcookie($key, '', time() - 3600, $path, $domain, $secure, $httponly);
         unset($this->cookie[$key]);
